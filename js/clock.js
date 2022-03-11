@@ -7,5 +7,5 @@ function getClock() {
     const seconds = String(date.getSeconds()).padStart(2, "0");
     clock.innerText = `${hours} : ${minutes} : ${seconds}`;
 }
-getClock(); 
-setInterval(getClock, 1000);
+getClock(); // 뜨자마자 바로 실행
+setInterval(getClock, 1000); // 1초마다 업데이트
